@@ -1,5 +1,3 @@
-#![warn(missing_docs)]
-
 //! # Base type for BitTorrent peer IDs in Rust
 //!
 //! `tdyne_peer_id` is a newtype for BitTorrent peer IDs, represented as `[u8; 20]`.
@@ -9,7 +7,8 @@
 //! Example:
 //!
 //! ```
-//! use tdyne_peer_id::{PeerId, BadPeerIdLengthError};
+//! use tdyne_peer_id::PeerId;
+//! use tdyne_peer_id::errors::BadPeerIdLengthError;
 //!
 //! let byte_array: &[u8; 20] = b"-TR0000-*\x00\x01d7xkqq04n";
 //! let byte_slice: &[u8] = b"-TR0000-*\x00\x01d7xkqq04n";
@@ -32,9 +31,9 @@
 //!   database and parser
 
 
-mod errors;
+pub mod errors;
 
-pub use crate::errors::BadPeerIdLengthError;
+use crate::errors::BadPeerIdLengthError;
 use std::borrow::Cow;
 use std::fmt;
 
