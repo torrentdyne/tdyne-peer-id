@@ -39,11 +39,7 @@ fn main() {
 * [`tdyne_peer_id_registry`](https://crates.io/crates/tdyne-peer-id-registry), peer ID
   database and parser
 
-
-[<img src="./.github/logo.svg" align="right" alt="TORRENTDYNE logo" width="40" height="40">](https://torrentdyne.com)
-
 `tdyne_peer_id` is opensourced from [TORRENTDYNE](https://torrentdyne.com), a BitTorrent diagnostic service.
-
 
 
 #### License
