@@ -1,0 +1,21 @@
+[package]
+name = "tdyne-peer-id"
+version = "1.0.0"
+authors = ["Dan Groshev <dan@dgroshev.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/torrentdyne/tdyne-peer-id"
+documentation = "https://docs.rs/tdyne-peer-id"
+homepage = "https://github.com/torrentdyne/tdyne-peer-id"
+description = """
+Basic Peer ID type used across BitTorrent related libraries.
+"""
+categories = ["network-programming", "parser-implementations"]
+exclude = ["/.github/*"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+pretty_assertions = "1"
